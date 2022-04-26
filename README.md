@@ -21,17 +21,17 @@ Install [React Devtools](https://chrome.google.com/webstore/detail/react-develop
 
 There are three tips to avoid wasted renders:
 
-### 1. React.memo
+### **React.memo**
 
-    React.memo is a higher order function. We should wrap our child component to avoid getting rendered again and again even with same props. React.memo will memoize the result.
+React.memo is a higher order function. We should wrap our child component to avoid getting rendered again and again even with same props. React.memo will memoize the result.
 
-### 2. useMemo
+### **useMemo**
 
-    This hook returns memoized value. We give it a function and an array of dependencies. useMemo will only execute the given function when one of dependencies changes.
+This hook returns memoized value. We give it a function and an array of dependencies. useMemo will only execute the given function when one of dependencies changes.
 
-### 3. useCallback
+### **useCallback**
 
-    This hook return memoized callback. We pass an inline callback function and an array of dependencies to it. useMemo will return return a memoized callback when one of given dependencies changes.
+This hook return memoized callback. We pass an inline callback function and an array of dependencies to it. useMemo will return return a memoized callback when one of given dependencies changes.
 
 ## Running the Project
 
